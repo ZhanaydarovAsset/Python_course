@@ -12,9 +12,13 @@ for j in range(len(bed)):
         sum = bed[j-1] + bed[j] + bed[j+1]
     except IndexError:
         sum = bed[j-1] + bed[j] + bed[0]
-    except Exception:
-        sum = bed[-1] + bed[j] + bed[j+1]
-        # if j == len(bed)-1:
+    
     if sum > max:
         max = sum
 print(max)
+
+# arr = list()
+# for i in range(len(bed) - 1):
+#     arr.append(bed[i-1]+ bed[i] + bed[i+1])
+# arr.append(bed[-2]+bed[-1]+bed[0])
+# print(max(arr))
