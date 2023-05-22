@@ -13,3 +13,8 @@ def check_value(arr, min, max):
 
 array = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 print(check_value(array, 1, 10))
+
+def f(array, min, max):
+    return list(idx for idx, x in enumerate(array) if min <= x <= max)
+
+print(f(array, 1,10))

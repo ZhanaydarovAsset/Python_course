@@ -10,3 +10,8 @@ array = [first_num]
 for i in range(amount-1):
     array.append(array[-1] + difference)
 print(array)
+
+def f(first_num, difference, amount):
+    return [first_num + i*difference for i in range (amount)]
+
+print(f(1,2,10))
